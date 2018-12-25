@@ -19,29 +19,29 @@ public class letterGradeTest {
 
 	@Test
 	public void ep_test() {
-		Assert.assertEquals('A', lg.letterGrade(95));
-		Assert.assertEquals('B', lg.letterGrade(85));
-		Assert.assertEquals('C', lg.letterGrade(75));
-		Assert.assertEquals('D', lg.letterGrade(65));
-		Assert.assertEquals('F', lg.letterGrade(30));	
-		Assert.assertEquals('X', lg.letterGrade(101));
-		Assert.assertEquals('X', lg.letterGrade(-1));
+		Assert.assertEquals('A', lg.main(95));
+		Assert.assertEquals('B', lg.main(85));
+		Assert.assertEquals('C', lg.main(75));
+		Assert.assertEquals('D', lg.main(65));
+		Assert.assertEquals('F', lg.main(30));	
+		Assert.assertEquals('X', lg.main(101));
+		Assert.assertEquals('X', lg.main(-1));
 	}
 	
 	@Test
 	public void bva_test() {
-		Assert.assertEquals('A', lg.letterGrade(100));
-		Assert.assertEquals('A', lg.letterGrade(90));
-		Assert.assertEquals('B', lg.letterGrade(89));
-		Assert.assertEquals('B', lg.letterGrade(80));
-		Assert.assertEquals('C', lg.letterGrade(79));
-		Assert.assertEquals('C', lg.letterGrade(70));
-		Assert.assertEquals('D', lg.letterGrade(69));
-		Assert.assertEquals('D', lg.letterGrade(60));
-		Assert.assertEquals('F', lg.letterGrade(59));
-		Assert.assertEquals('F', lg.letterGrade(0));
-		Assert.assertEquals('X', lg.letterGrade(101));
-		Assert.assertEquals('X', lg.letterGrade(-1));
+		Assert.assertEquals('A', lg.main(100));
+		Assert.assertEquals('A', lg.main(90));
+		Assert.assertEquals('B', lg.main(89));
+		Assert.assertEquals('B', lg.main(80));
+		Assert.assertEquals('C', lg.main(79));
+		Assert.assertEquals('C', lg.main(70));
+		Assert.assertEquals('D', lg.main(69));
+		Assert.assertEquals('D', lg.main(60));
+		Assert.assertEquals('F', lg.main(59));
+		Assert.assertEquals('F', lg.main(0));
+		Assert.assertEquals('X', lg.main(101));
+		Assert.assertEquals('X', lg.main(-1));
 	}
-
+	
 }
